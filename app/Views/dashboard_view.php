@@ -97,7 +97,7 @@
         <div class="col-lg-8">
             <div class="card shadow mb-4">
                 <div class="card-header py-3 bg-white d-flex justify-content-between align-items-center">
-                    <h6 class="m-0 fw-bold text-primary">Buku Terbaru</h6>
+                    <h6 class="m-0 fw-bold text-primary">Buku Terbaru <?= $total_buku; ?></h6>
                     <a href="<?= base_url('library'); ?>" class="btn btn-sm btn-primary">Lihat Semua</a>
                 </div>
                 <div class="card-body p-0">

@@ -65,7 +65,7 @@ class Transaksi extends BaseController
 
         // Kurangi stok buku di tabel buku
         $bukuModel->update($buku_id, [
-            'stok' => $buku['stok'] - 1
+            'stok' => $buku['stok'] - $jumlah_buku
         ]);
 
         $db->transComplete(); // Selesaikan transaksi DB
@@ -108,7 +108,7 @@ class Transaksi extends BaseController
         $buku = $bukuModel->find($transaksi['book_id']); // Gunakan nama kolom sesuai database (buku_id/book_id)
         if ($buku) {
             $bukuModel->update($transaksi['book_id'], [
-                'stok' => $buku['stok'] + 1
+                'stok' => $buku['stok'] + $transaksi['jumlah_buku'] // Tambahkan jumlah buku yang dipinjam
             ]);
         }
 
