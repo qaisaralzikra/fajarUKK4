@@ -1,0 +1,795 @@
+DEBUG - 2026-04-01 00:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-01 00:40:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perpustakaan', 3306, '', 0)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#11 {main}
+CRITICAL - 2026-04-01 00:40:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 3 APPPATH\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-01 00:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-01 00:41:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perpustakaan', 3306, '', 0)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#11 {main}
+CRITICAL - 2026-04-01 00:41:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 3 APPPATH\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-01 00:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-01 00:41:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perpustakaan', 3306, '', 0)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#11 {main}
+CRITICAL - 2026-04-01 00:41:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 3 APPPATH\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-01 00:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-01 00:42:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perpustakaan', 3306, '', 0)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#11 {main}
+CRITICAL - 2026-04-01 00:42:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 3 APPPATH\Controllers\Auth.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-01 00:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 00:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-01 01:08:00 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: library]
+in SYSTEMPATH\Filters\Filters.php on line 590.
+ 1 SYSTEMPATH\Filters\Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(641): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-01 01:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-01 01:22:38 --> Error: Class "App\Filters\AuthFilter" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('library', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:25:03 --> Error: Class "App\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\Filters')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('library', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:25:29 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:25:47 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:25:49 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:25:54 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:27:46 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:27:47 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:27:48 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:27:48 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:28:23 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:29:39 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:29:40 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:30:21 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:30:24 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:34:29 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-01 01:35:24 --> Error: Class "CodeIgniter\Filters\Filters" not found
+[Method: GET, Route: library]
+in SYSTEMPATH\Config\Services.php on line 297.
+ 1 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::filters(Object(Config\Filters), false)
+ 2 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 3 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 4 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::filters()
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-01 01:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-01 01:45:11 --> ErrorException: Undefined array key "cover"
+[Method: GET, Route: library]
+in APPPATH\Views\library_view.php on line 56.
+ 1 APPPATH\Views\library_view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cover"', 'C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\library_view.php', 56)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\library_view.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('library_view', [], true)
+ 5 APPPATH\Controllers\Library.php(22): view('library_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Library->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Library))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+ERROR - 2026-04-01 01:50:32 --> Can't create table `perpustakaan`.`books` (errno: 150 "Foreign key constraint is incorrectly formed")
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 4 SYSTEMPATH\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 5 APPPATH\Database\Migrations\2026-04-01-014846_Books.php(38): CodeIgniter\Database\Forge->createTable('books')
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\CreateBooksTable->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-01 01:50:53 --> Can't create table `perpustakaan`.`books` (errno: 150 "Foreign key constraint is incorrectly formed")
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 4 SYSTEMPATH\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 5 APPPATH\Database\Migrations\2026-04-01-014846_Books.php(38): CodeIgniter\Database\Forge->createTable('books')
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\CreateBooksTable->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-01 01:51:49 --> Can't create table `perpustakaan`.`books` (errno: 150 "Foreign key constraint is incorrectly formed")
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 4 SYSTEMPATH\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 5 APPPATH\Database\Migrations\2026-04-01-015124_Books.php(38): CodeIgniter\Database\Forge->createTable('books')
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\CreateBooksTable->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-01 01:54:03 --> Can't create table `perpustakaan`.`books` (errno: 150 "Foreign key constraint is incorrectly formed")
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 4 SYSTEMPATH\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 5 APPPATH\Database\Migrations\2026-04-01-015124_Books.php(38): CodeIgniter\Database\Forge->createTable('books')
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\CreateBooksTable->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-01 01:54:23 --> Can't create table `perpustakaan`.`books` (errno: 150 "Foreign key constraint is incorrectly formed")
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 4 SYSTEMPATH\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 5 APPPATH\Database\Migrations\2026-04-01-015124_Books.php(38): CodeIgniter\Database\Forge->createTable('books')
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\CreateBooksTable->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([...])
+12 SYSTEMPATH\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', [...])
+13 SYSTEMPATH\Commands\Database\MigrateRefresh.php(91): CodeIgniter\CLI\BaseCommand->call('migrate', [...])
+14 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\MigrateRefresh->CodeIgniter\Commands\Database\{closure}()
+15 SYSTEMPATH\Commands\Database\MigrateRefresh.php(89): CodeIgniter\Commands\Database\MigrateRefresh->withSignalsBlocked(Object(Closure))
+16 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run([...])
+17 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', [])
+18 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+19 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+20 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-01 01:54:26 --> Can't create table `perpustakaan`.`books` (errno: 150 "Foreign key constraint is incorrectly formed")
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 4 SYSTEMPATH\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `books` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(255) NOT NULL,
+	`cover` VARCHAR(255) NULL,
+	`status` ENUM(\'Tersedia\',\'Dipinjam\') NOT NULL DEFAULT \'Tersedia\',
+	CONSTRAINT `pk_books` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci')
+ 5 APPPATH\Database\Migrations\2026-04-01-015124_Books.php(38): CodeIgniter\Database\Forge->createTable('books')
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\CreateBooksTable->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-04-01 01:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 01:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 02:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 02:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 02:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 02:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-01 02:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

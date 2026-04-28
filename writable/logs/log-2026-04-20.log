@@ -1,0 +1,550 @@
+ERROR - 2026-04-20 03:33:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(16): CodeIgniter\BaseModel->first()
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('C:\\Users\\LENOVO...')
+#13 {main}
+CRITICAL - 2026-04-20 03:33:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(16): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\LENOVO\\Downloads\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+ERROR - 2026-04-20 03:55:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2026-04-20 03:56:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(16): CodeIgniter\BaseModel->first()
+#7 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#8 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('D:\\Project Free...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\app\Controllers\Auth.php(16): CodeIgniter\BaseModel->first()
+#6 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(951): App\Controllers\Auth->login()
+#7 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\rewrite.php(44): require_once('D:\\Project Free...')
+#13 {main}
+CRITICAL - 2026-04-20 03:56:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(16): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+ERROR - 2026-04-20 03:59:25 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ukk-4fajar' in D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'UKK-4Fajar', 3306, '', 0)
+#1 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ukk-4fajar' in D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-04-20 04:00:03 --> CodeIgniter\Exceptions\ConfigException: Invalid DBDriver name: "MySQL"
+[Method: CLI, Route: migrate]
+in SYSTEMPATH\Database\Database.php on line 176.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQL')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Common.php(391): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH\Database\MigrationRunner.php(156): db_connect(null)
+ 5 SYSTEMPATH\Config\Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH\Config\Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH\Config\BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH\Common.php(1078): CodeIgniter\Config\BaseService::get('migrations')
+12 SYSTEMPATH\Commands\Database\Migrate.php(73): service('migrations')
+13 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+14 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+15 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+16 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+17 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-20 04:02:11 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ukk-4fajar' in D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'UKK-4Fajar', 3306, '', 0)
+#1 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ukk-4fajar' in D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\Project Freelance\UKK-4\codeigniter4-framework-v4.7.0-0-ge7753bc\codeigniter4-framework-e7753bc\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+DEBUG - 2026-04-20 04:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-20 04:18:41 --> Can't DROP 'isLoggedIn'; check that column/key exists
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('ALTER TABLE `users` DROP COLUMN `isLoggedIn`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `users` DROP COLUMN `isLoggedIn`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `users` DROP COLUMN `isLoggedIn`')
+ 4 SYSTEMPATH\Database\Forge.php(799): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `users` DROP COLUMN `isLoggedIn`')
+ 5 APPPATH\Database\Migrations\2026-04-20-041540_UpdateTableUsers.php(20): CodeIgniter\Database\Forge->dropColumn('users', 'isLoggedIn')
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\UpdateTableUsers->down()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(323): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\MigrateRollback.php(105): CodeIgniter\Database\MigrationRunner->regress(2)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\MigrateRollback::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\MigrateRollback.php(104): CodeIgniter\Commands\Database\MigrateRollback->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRollback->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:rollback', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-20 04:21:10 --> Table 'fajar.produk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('ALTER TABLE `produk`
+	ADD `isLoggedIn` BOOLEAN DEFAULT \'false\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `produk`
+	ADD `isLoggedIn` BOOLEAN DEFAULT \'false\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `produk`
+	ADD `isLoggedIn` BOOLEAN DEFAULT \'false\'')
+ 4 SYSTEMPATH\Database\Forge.php(772): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `produk`
+	ADD `isLoggedIn` BOOLEAN DEFAULT \'false\'')
+ 5 APPPATH\Database\Migrations\2026-04-20-041540_UpdateTableUsers.php(18): CodeIgniter\Database\Forge->addColumn('produk', [...])
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\UpdateTableUsers->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-20 04:21:19 --> Invalid default value for 'isLoggedIn'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('ALTER TABLE `users`
+	ADD `isLoggedIn` BOOLEAN DEFAULT \'false\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `users`
+	ADD `isLoggedIn` BOOLEAN DEFAULT \'false\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `users`
+	ADD `isLoggedIn` BOOLEAN DEFAULT \'false\'')
+ 4 SYSTEMPATH\Database\Forge.php(772): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `users`
+	ADD `isLoggedIn` BOOLEAN DEFAULT \'false\'')
+ 5 APPPATH\Database\Migrations\2026-04-20-041540_UpdateTableUsers.php(18): CodeIgniter\Database\Forge->addColumn('users', [...])
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\UpdateTableUsers->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-04-20 04:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-20 04:50:53 --> Unknown column 'role' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `role` = \'user\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `role` = \'user\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `role` = \'user\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `role` = :role:', [...], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Transaksi.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-20 04:50:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'role' in 'where clause'
+[Method: GET, Route: transaksi/admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `role` = :role:', [...], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Transaksi.php(19): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-20 04:50:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'role' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `role` = \'user\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `role` = \'user\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `role` = :role:', [...], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Transaksi.php(19): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-20 04:50:53 --> [Caused by] mysqli_sql_exception: Unknown column 'role' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `role` = \'user\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `role` = \'user\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `role` = \'user\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `role` = :role:', [...], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Transaksi.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+CRITICAL - 2026-04-20 04:51:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "transaksi.php"
+[Method: GET, Route: transaksi/admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transaksi.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('transaksi', [], true)
+ 3 APPPATH\Controllers\Transaksi.php(22): view('transaksi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-20 04:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-20 04:51:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "transaksi.php"
+[Method: GET, Route: transaksi/admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transaksi.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('transaksi', [], true)
+ 3 APPPATH\Controllers\Transaksi.php(22): view('transaksi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-20 04:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-20 04:52:27 --> ErrorException: Undefined array key "judul"
+[Method: GET, Route: transaksi/admin]
+in APPPATH\Views\transaksi_view.php on line 72.
+ 1 APPPATH\Views\transaksi_view.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul"', 'D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\transaksi_view.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\transaksi_view.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('transaksi_view', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(22): view('transaksi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-20 04:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 04:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-20 05:08:37 --> Display width out of range for column 'stok' (max = 255)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('ALTER TABLE `books`
+	ADD `stok` INT(10000) DEFAULT 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `books`
+	ADD `stok` INT(10000) DEFAULT 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `books`
+	ADD `stok` INT(10000) DEFAULT 0')
+ 4 SYSTEMPATH\Database\Forge.php(772): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `books`
+	ADD `stok` INT(10000) DEFAULT 0')
+ 5 APPPATH\Database\Migrations\2026-04-20-050649_AddColumnstok.php(19): CodeIgniter\Database\Forge->addColumn('books', [...])
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\AddColumnstok->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-04-20 05:09:57 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: transaksi/simpan]
+in SYSTEMPATH\BaseModel.php on line 1056.
+ 1 SYSTEMPATH\BaseModel.php(1056): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(706): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Transaksi.php(60): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-20 05:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-20 05:14:37 --> ErrorException: Undefined array key "judul"
+[Method: GET, Route: transaksi/admin]
+in APPPATH\Views\transaksi_view.php on line 132.
+ 1 APPPATH\Views\transaksi_view.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul"', 'D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\transaksi_view.php', 132)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\transaksi_view.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('transaksi_view', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(23): view('transaksi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-20 05:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-20 05:25:50 --> ErrorException: Undefined array key "tanggal_pengembalian"
+[Method: GET, Route: transaksi/admin]
+in APPPATH\Views\transaksi_view.php on line 135.
+ 1 APPPATH\Views\transaksi_view.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_pengembalian"', 'D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\transaksi_view.php', 135)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\transaksi_view.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('transaksi_view', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(23): view('transaksi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-20 05:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 05:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
