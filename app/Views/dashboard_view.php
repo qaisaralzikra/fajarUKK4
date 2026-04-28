@@ -45,7 +45,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="h3 mb-0 text-gray-800">Ringkasan Data</h2>
         <span class="badge bg-white shadow-sm text-dark p-2 rounded border">
-               Selamat Datang, <strong><?= $username; ?></strong>! 👋
+              Selamat Datang, <strong><?= $username; ?></strong>! 👋
         </span>
     </div>
 
