@@ -134,7 +134,7 @@
     
     <div class="glass-card">
         <div class="login-header text-center">
-            <h2>Registrasi Account</h2>
+            <h2>Registrasi Admin</h2>
             <p>Aplikasi Peminjaman Buku Digital</p>
         </div>
 
