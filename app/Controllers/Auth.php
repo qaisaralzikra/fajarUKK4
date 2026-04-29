@@ -21,6 +21,24 @@ class Auth extends BaseController
         return view('registrasi_admin'); // Tampilkan halaman login
     }
 
+    public function profilAdmin()
+    {
+        $session = session();
+
+        $model = new UserModel();
+
+        $foto = $model->where('id', $session->get('id'))->first();
+
+        $data = ([
+            'username' => $session->get('username'),
+            'jabatan' => $session->get('status'),
+            'ttl' => $session->get('ttl'),
+            'foto' => $foto['foto']
+        ]);
+
+        return view('profil_admin', $data); // Tampilkan halaman login
+    }
+
     public function createAccount()
     {
         $model = new UserModel();
@@ -52,6 +70,21 @@ class Auth extends BaseController
         // 1. Ambil input dari form
         $username = $this->request->getVar('username');
         $password = $this->request->getVar('password');
+        $ttl = $this->request->getVar('ttl');
+
+        $fileCover = $this->request->getFile('cover');
+
+        // 2. Cek apakah ada file yang diunggah
+        if ($fileCover && $fileCover->isValid() && !$fileCover->hasMoved()) {
+            // Berikan nama random agar tidak ada file dengan nama yang sama
+            $namaCover = $fileCover->getRandomName();
+
+            // Pindahkan file ke folder public/foto
+            $fileCover->move('foto', $namaCover);
+        } else {
+            // Jika tidak ada file, set nama default
+            $namaCover = 'default.jpg';
+        }
 
         // 2. Cek apakah username sudah ada di database
         $userExist = $model->where('username', $username)->first();
@@ -64,6 +97,8 @@ class Auth extends BaseController
             'username' => $username,
             'password' => password_hash($password, PASSWORD_DEFAULT), // Membuat password tidak kelihatan di DB
             'status'   => 'admin', // Default status untuk akun baru
+            'foto'  => $namaCover,
+            'ttl' => $ttl
         ]);
 
         return redirect()->to('/auth')->with('success', 'Akun berhasil dibuat! Silakan login.');
@@ -88,6 +123,7 @@ class Auth extends BaseController
                 'id'         => $user['id'],
                 'username'   => $user['username'],
                 'status'     => $user['status'],
+                'ttl' => $user['ttl'],
                 'isLoggedIn' => true
             ];
             $session->set($sessionData);

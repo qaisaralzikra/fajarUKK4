@@ -207,3 +207,285 @@ DEBUG - 2026-04-29 08:00:10 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-04-29 08:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-04-29 08:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-04-29 08:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 13:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:14:59 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:15:00 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:16:30 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:16:31 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:16:31 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:18:29 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:18:30 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:18:34 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:18:34 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:18:35 --> Error: Object of class App\Models\UserModel could not be converted to string
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 4 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:19:40 --> ErrorException: Array to string conversion
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 APPPATH\Views\profil_admin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php', 122)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 5 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:19:40 --> ErrorException: Array to string conversion
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 APPPATH\Views\profil_admin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php', 122)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 5 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:19:41 --> ErrorException: Array to string conversion
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 APPPATH\Views\profil_admin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php', 122)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 5 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:22:50 --> ErrorException: Array to string conversion
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 APPPATH\Views\profil_admin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php', 122)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 5 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 14:22:51 --> ErrorException: Array to string conversion
+[Method: GET, Route: profil/admin]
+in APPPATH\Views\profil_admin.php on line 122.
+ 1 APPPATH\Views\profil_admin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php', 122)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\app\\Views\\profil_admin.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('profil_admin', [], true)
+ 5 APPPATH\Controllers\Auth.php(39): view('profil_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->profilAdmin()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Project Freelance\\UKK-4\\codeigniter4-framework-v4.7.0-0-ge7753bc\\codeigniter4-framework-e7753bc\\public\\index.php')
+DEBUG - 2026-04-29 14:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 14:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

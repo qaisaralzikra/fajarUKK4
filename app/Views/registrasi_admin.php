@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Modern Library</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    
+
     <style>
         :root {
             --primary-color: #6366f1;
@@ -23,10 +24,10 @@
             justify-content: center;
             /* Background Mesh Gradient yang Keren */
             background-color: #e5e7eb;
-            background-image: 
-                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
-                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+            background-image:
+                radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
             background-attachment: fixed;
         }
 
@@ -122,52 +123,91 @@
             filter: blur(30px);
             opacity: 0.5;
         }
-        .circle-1 { top: -20px; right: -20px; }
-        .circle-2 { bottom: -20px; left: -20px; }
+
+        .circle-1 {
+            top: -20px;
+            right: -20px;
+        }
+
+        .circle-2 {
+            bottom: -20px;
+            left: -20px;
+        }
     </style>
 </head>
+
 <body>
 
-<div class="login-container">
-    <div class="circle circle-1"></div>
-    <div class="circle circle-2"></div>
-    
-    <div class="glass-card">
-        <div class="login-header text-center">
-            <h2>Registrasi Admin</h2>
-            <p>Aplikasi Peminjaman Buku Digital</p>
-        </div>
+    <div class="login-container">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
 
-        <?php if(session()->getFlashdata('msg')): ?>
-            <div class="alert alert-custom text-center mb-4">
-                <?= session()->getFlashdata('msg') ?>
+        <div class="glass-card">
+            <div class="login-header text-center">
+                <h2>Registrasi Admin</h2>
+                <p>Aplikasi Peminjaman Buku Digital</p>
             </div>
-        <?php endif; ?>
 
-        <form action="<?= base_url('registrasi/admin'); ?>" method="post">
-            <!-- <div class="mb-3">
+            <?php if (session()->getFlashdata('msg')): ?>
+                <div class="alert alert-custom text-center mb-4">
+                    <?= session()->getFlashdata('msg') ?>
+                </div>
+            <?php endif; ?>
+
+            <form action="<?= base_url('registrasi/admin'); ?>" enctype="multipart/form-data" method="post">
+                <!-- <div class="mb-3">
                 <label class="form-label">Status</label>
                 <select name="status" id="">
                     <option value="admin">Admin</option>
                     <option value="user">User</option>
                 </select>
             </div> -->
-            <div class="mb-3">
-                <label class="form-label">Username</label>
-                <input type="text" name="username" class="form-control" placeholder="Username" required autocomplete="off">
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" placeholder="Username" required autocomplete="off">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="••••••••" required>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Tanggal Lahir</label>
+                    <input type="date" name="ttl" class="form-control" placeholder="Tanggal, Bulan, Tahun" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Foto</label>
+                    <input type="file" name="cover" class="form-control" id="coverInput" accept="image/*" onchange="previewImg()">
+                    <small class="text-muted">Format: jpg, png (Maks 2MB)</small>
+                    <div class="text-center">
+                        <img id="imgPreview" class="img-preview img-thumbnail mx-auto">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-login w-100">Sign Up</button>
+            </form>
+
+            <div class="text-center mt-4">
+                <small style="color: rgba(255,255,255,0.5)">© 2024 Library System</small>
             </div>
-            <div class="mb-4">
-                <label class="form-label">Password</label>
-                <input type="password" name="password" class="form-control" placeholder="••••••••" required>
-            </div>
-            <button type="submit" class="btn btn-login w-100">Sign Up</button>
-        </form>
-        
-        <div class="text-center mt-4">
-            <small style="color: rgba(255,255,255,0.5)">© 2024 Library System</small>
         </div>
     </div>
-</div>
+
+    <script>
+        // Fungsi untuk preview gambar saat dipilih
+        function previewImg() {
+            const input = document.querySelector('#coverInput');
+            const preview = document.querySelector('#imgPreview');
+
+            preview.style.display = 'block';
+
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(input.files[0]);
+
+            fileReader.onload = function(e) {
+                preview.src = e.target.result;
+            }
+        }
+    </script>
 
 </body>
+
 </html>

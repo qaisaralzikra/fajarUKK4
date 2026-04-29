@@ -74,6 +74,7 @@
             <a class="nav-link" href="<?= base_url('dashboard'); ?>"><i class="fas fa-tachometer-alt me-2"></i><span>Dashboard</span></a>
             <a class="nav-link active" href="<?= base_url('library'); ?>"><i class="fas fa-book me-2"></i><span>Daftar Buku</span></a>
             <a class="nav-link" href="<?= base_url('transaksi/admin'); ?>"><i class="fas fa-users me-2"></i><span>Peminjam</span></a>
+            <a class="nav-link" href="<?= base_url('profil/admin'); ?>"><i class="fas fa-user me-2"></i><span>Profil</span></a>
             <div class="mt-5 p-3">
                 <a href="<?= base_url('auth/logout'); ?>" class="btn btn-light btn-sm w-100 fw-bold text-danger">
                     <i class="fas fa-sign-out-alt me-1"></i><span>Logout</span>
