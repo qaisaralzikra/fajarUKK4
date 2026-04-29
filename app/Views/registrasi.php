@@ -144,30 +144,59 @@
             </div>
         <?php endif; ?>
 
-        <form action="<?= base_url('registrasi'); ?>" method="post">
-            <!-- <div class="mb-3">
+        <form action="<?= base_url('registrasi'); ?>" enctype="multipart/form-data" method="post">
+                <!-- <div class="mb-3">
                 <label class="form-label">Status</label>
                 <select name="status" id="">
                     <option value="admin">Admin</option>
                     <option value="user">User</option>
                 </select>
             </div> -->
-            <div class="mb-3">
-                <label class="form-label">Username</label>
-                <input type="text" name="username" class="form-control" placeholder="Username" required autocomplete="off">
-            </div>
-            <div class="mb-4">
-                <label class="form-label">Password</label>
-                <input type="password" name="password" class="form-control" placeholder="••••••••" required>
-            </div>
-            <button type="submit" class="btn btn-login w-100">Sign Up</button>
-        </form>
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" placeholder="Username" required autocomplete="off">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="••••••••" required>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Tanggal Lahir</label>
+                    <input type="date" name="ttl" class="form-control" placeholder="Tanggal, Bulan, Tahun" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Foto</label>
+                    <input type="file" name="cover" class="form-control" id="coverInput" accept="image/*" onchange="previewImg()">
+                    <small class="text-muted">Format: jpg, png (Maks 2MB)</small>
+                    <div class="text-center">
+                        <img id="imgPreview" class="img-preview img-thumbnail mx-auto">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-login w-100">Sign Up</button>
+            </form>
         
         <div class="text-center mt-4">
             <small style="color: rgba(255,255,255,0.5)">© 2024 Library System</small>
         </div>
     </div>
 </div>
+
+<script>
+        // Fungsi untuk preview gambar saat dipilih
+        function previewImg() {
+            const input = document.querySelector('#coverInput');
+            const preview = document.querySelector('#imgPreview');
+
+            preview.style.display = 'block';
+
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(input.files[0]);
+
+            fileReader.onload = function(e) {
+                preview.src = e.target.result;
+            }
+        }
+    </script>
 
 </body>
 </html>

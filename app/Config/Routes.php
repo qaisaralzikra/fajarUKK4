@@ -22,6 +22,7 @@ $routes->get('create/account/admin', 'Auth::registrasiAdmin');
 $routes->post('registrasi/admin', 'Auth::createAccountAdmin');
 
 $routes->get('profil/admin', 'Auth::profilAdmin');
+$routes->get('profil/user', 'Auth::profilUser');
 
 // user
 $routes->get('/user/dashboard', 'Dashboard::user');
